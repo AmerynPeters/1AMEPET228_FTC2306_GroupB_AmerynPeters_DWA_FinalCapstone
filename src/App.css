@@ -1,0 +1,184 @@
+
+@media only screen and (max-width: 480px) {
+  
+  body {
+    font-size: 14px;
+  }
+
+  .prev-cont {
+    margin-bottom: 0;
+  }
+
+  .preview {
+    height: 88%;
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+  }
+  .preview-image {
+    margin-top: 5%;
+    height: 40%;
+  }
+
+  .d-header {
+  text-align:left; 
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 100%;
+  height: 30%;
+  justify-items: left;
+ 
+}
+
+.dh-image {
+  width: 100%;
+  height: 80%;
+  border-radius: 1em;
+  align-self: center;
+}
+
+.dh-text {
+  margin-left: 30px;
+}
+}
+
+/* Nav css */
+
+.nav-container {
+  width: 100%;
+  background-color: antiquewhite;
+  position: fixed;
+  top: 0;
+  /* display:grid;
+  grid-template-columns: 10% 10% 10% auto 10% 20%;
+  justify-items: center; */
+}
+
+.nav-container button {
+  border:0;
+  color: black;
+  background-color: transparent;
+}
+
+.filter {
+  grid-column-start: 5;
+}
+
+/* Preview css */
+
+.container {
+  margin-top: 10vh;
+}
+
+.prev-container {
+  margin-bottom: 20%;
+}
+
+.preview{
+  border: 2px solid gray;
+  /* border-radius: 2em; */
+  /* margin: 10px; */
+  /* display: grid; */
+  /* grid-template-columns: 40% 60%; */
+  /* justify-items: start; */
+  /* align-items: center; */
+}
+
+.preview-image {
+  width:180px;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 1em;
+}
+
+/* Dialog css */
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 97%;
+  height: 70%;
+  border-radius: 2em;
+  overflow-y: auto; 
+}
+
+.d-header {
+  text-align:left; 
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: 100%;
+  height: 30%;
+  justify-items: left;
+ 
+}
+
+.dh-image {
+  width: 100%;
+  height: 80%;
+  border-radius: 1em;
+  align-self: center;
+}
+
+.dh-text {
+  margin-left: 30px;
+}
+
+.d-seasons {
+  display: inline-flex;
+  height: auto;
+  width: 100%;
+  overflow-x: auto; 
+}
+
+.d-episodes {
+  display: flex;
+  flex-direction: column;
+}
+
+.star:hover {
+  cursor: pointer;
+}
+
+.e-container {
+  display: grid;
+  grid-template-columns: 10% auto 10%;
+  justify-items: left;
+}  
+
+.star {
+  background-color: white;
+  border: 0;
+  width: 100%;
+}
+
+
+
+/* Player css */
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+ 
+  background-color: antiquewhite;
+  color: (rgb(255, 255, 255)255, 255);
+  padding: 10px;
+  text-align: center;
+  z-index: 1000; 
+}
+
+.player-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 14%;
+  width: 40%;
+  position: fixed;
+  bottom: 10px;
+  border: 2px solid white;
+  border-radius: 2em;
+  background-color: black;
+}
+
