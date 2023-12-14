@@ -5,7 +5,7 @@ import createPrev from "./helperFunctions/createPrev";
 import createFav from "./helperFunctions/createFav";
 import sortArray from "./helperFunctions/sortArray";
 import searchInArray from "./helperFunctions/searchArray.jsx";
-import CarouselView from "./CarouselChanger.jsx";
+import CarouselChanger from "./CarouselChanger.jsx";
 import { Card } from 'antd';
 //import { CContainer, CRow } from "@coreui/react";
 import { mergeStrips } from "./helperFunctions/mergeStrips";
