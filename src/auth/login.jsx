@@ -15,18 +15,6 @@ const [formData, setFormData] = useState({
     let navigate = useNavigate();
 
 
-    function handleInput(e) {
-        e.preventDefault();
-        const { name, value } = e.target;
-
-
-        setFormData((prev) => {
-            return {
-                ...prev,
-                [name]: value,
-            };
-        });
-    }
 
 
     async function handleSubmit(e) {
@@ -52,14 +40,14 @@ const [formData, setFormData] = useState({
     }
 
 return (
-    return (
+    
     <Form
       name="normal_login"
       className="login-form"
       initialValues={{
         remember: true,
       }}
-      onFinish={onFinish}
+      onSubmit={handleSubmit}
     >
       <Form.Item
         name="username"
@@ -105,7 +93,7 @@ return (
       </Form.Item>
     </Form>
   );
-};
+}
 
 
 export default Login;
