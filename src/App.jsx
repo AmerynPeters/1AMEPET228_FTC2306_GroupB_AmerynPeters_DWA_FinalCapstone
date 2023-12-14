@@ -3,7 +3,8 @@ import { useState,useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@coreui/coreui/dist/css/coreui.min.css'
 import './App.css'
-import { CContainer } from '@coreui/react'
+//import { CContainer } from '@coreui/react'
+import PropTypes from 'prop-types'
 
 import Previews from './components/previews'
 import Nav from './components/Nav'
@@ -13,7 +14,7 @@ import { supabase } from './superbase/client';
 import Strip from './components/helperFunctions/strip';
 import createFav from './components/helperFunctions/createFav'
 import stripArray from './components/helperFunctions/stripArray';
-import ReactAudio from './components/audio';
+import ReactAudio from './components/Audio';
 import FuseSearch from './components/fuse/fuseSearch';
 
 
@@ -52,7 +53,7 @@ function App() {
   useEffect(() => {
     async function gettingData() {
       const { data, error } = await supabase
-          .from('favourates')
+          .from('favourite')
           .select();
   
       if (error) {

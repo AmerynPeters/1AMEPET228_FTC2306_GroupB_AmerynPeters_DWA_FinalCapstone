@@ -2,7 +2,7 @@
 import { useState, useEffect, createRef } from "react";
 import ReactAudioPlayer from "react-audio-player";
 
-function ReactAudio(props) {
+function Audio(props) {
     const [lastPlayed, setLastplayed] = useState(() => {
         if (localStorage.getItem("lastPlayed")) {
             return JSON.parse(localStorage.getItem("lastPlayed"));
@@ -88,4 +88,4 @@ function ReactAudio(props) {
     );
 }
 
-export default ReactAudio;
+export default Audio;

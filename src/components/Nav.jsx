@@ -1,5 +1,6 @@
 /* eslint-disable react/react-in-jsx-scope */
-import { CButton, CFormSelect, CNavbar } from "@coreui/react";
+//import { CButton, CFormSelect, CNavbar } from "@coreui/react";
+import {}
 import { supabase } from "../superbase/client";
 import { useNavigate } from "react-router-dom";
 
@@ -12,8 +13,8 @@ export default function Nav(props) {
 
             <button onClick={() => props.changepg("All")}>All</button>
 
-            <button onClick={() => props.changepg("Favourate")}>
-                Favourate
+            <button onClick={() => props.changepg("Favourite")}>
+                Favourite
             </button>
 
             <button className="filter">Filter</button>

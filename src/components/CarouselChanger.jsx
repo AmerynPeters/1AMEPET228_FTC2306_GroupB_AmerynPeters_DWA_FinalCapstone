@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 
 
 const contentStyle = {
+className="d-block w-100",                        
+alt="slide 1",
   height: '160px',
   color: '#fff',
   lineHeight: '160px',
@@ -22,17 +24,12 @@ export default function CarouselChanger(props) {
     useEffect(() => {
         let list = props.all.map((item, id) => {
             return (
-                <Carousel autoplay key={item.id}>
+                <Carousel autoplay>
                     <Image
-                        className="d-block w-100"
-                        src={item.image}
-                        alt="slide 1"
+key={item.id}
                     />
-                    <CarouselCaption
-                        style={{ backdropFilter: "blur(10px)" }}
-                        className=" d-md-block"
-                    >
-                        <h1>{item.title}</h1>
+                   
+                        <h3><style>{item.title}</style></h3>
                         <p
                             style={{
                                 overflow: "hidden",
@@ -42,7 +39,7 @@ export default function CarouselChanger(props) {
                         >
                             {item.description}
                         </p>
-                    </CarouselCaption>
+                    
                 </Carousel>
             );
         });

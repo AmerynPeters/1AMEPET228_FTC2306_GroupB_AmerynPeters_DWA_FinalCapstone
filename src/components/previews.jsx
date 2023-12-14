@@ -4,7 +4,7 @@ import mergeArrays from "./helperFunctions/mergeArrays.jsx";
 import createPrev from "./helperFunctions/createPrev";
 import createFav from "./helperFunctions/createFav";
 import sortArray from "./helperFunctions/sortArray";
-import searchInArray from "./helperFunctions/searchInArray";
+import searchInArray from "./helperFunctions/searchArray.jsx";
 import CarouselView from "./CarouselChanger.jsx";
 import { Card } from 'antd';
 //import { CContainer, CRow } from "@coreui/react";
@@ -21,7 +21,7 @@ export default function Previews(props) {
     const [allPrevs, setAllPrevs] = useState([1, 2]);
     const [allFavs, setAllFavs] = useState([]);
 
-    // passing list with objects of favourate episodes from App
+    // passing list with objects of fav episodes from App
     useEffect(() => {
         setFavObjs(() => stripArray(props.fav));
     }, [props.fav]);
@@ -60,7 +60,7 @@ export default function Previews(props) {
     useEffect(() => {
         setAllPrevs(
             createPrev(
-                props.page == "Favourate"
+                props.page == "Favourite"
                     ? sortArray(
                           searchArray(allFavs, props.searchText),
                           props.sorting
