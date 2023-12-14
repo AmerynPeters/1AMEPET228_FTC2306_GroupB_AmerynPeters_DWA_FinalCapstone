@@ -5,9 +5,54 @@ import { Link, useNavigate } from "react-router-dom";
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input } from 'antd';
 
-function Login ({ setToken })= () => {
-  const onFinish[formData, setFormData] = useState ({
-  return (
+function Login ({ setToken }) {
+const [formData, setFormData] = useState({
+        email: "",
+        password: "",
+    });
+
+
+    let navigate = useNavigate();
+
+
+    function handleInput(e) {
+        e.preventDefault();
+        const { name, value } = e.target;
+
+
+        setFormData((prev) => {
+            return {
+                ...prev,
+                [name]: value,
+            };
+        });
+    }
+
+
+    async function handleSubmit(e) {
+        e.preventDefault();
+
+
+        try {
+            const { data, error } = await supabase.auth.signInWithPassword({
+                email: formData.email,
+                password: formData.password,
+            });
+
+
+            if (error) throw error;
+
+
+            setToken(data);
+            navigate("/App");
+        } catch (error) {
+            alert(error);
+            console.log(error);
+        }
+    }
+
+return (
+    return (
     <Form
       name="normal_login"
       className="login-form"
@@ -60,11 +105,9 @@ function Login ({ setToken })= () => {
       </Form.Item>
     </Form>
   );
-  }) => {
-    console.log('Received values of form: 'values`)
-  };
-
 };
+
+
 export default Login;
 
 
