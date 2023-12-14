@@ -1,24 +1,33 @@
-import {
-    CCarousel,
-    CCarouselCaption,
-    CCarouselItem,
-    CImage,
-} from "@coreui/react";
+import React from 'react';
+import { Carousel } from 'antd';
 import { useEffect, useState } from "react";
+
+
+const contentStyle = {
+  height: '160px',
+  color: '#fff',
+  lineHeight: '160px',
+  textAlign: 'center',
+  background: '#364d79',
+};
 
 export default function CarouselView(props) {
     const [items, setitems] = useState([]);
 
+
+//export default function CarouselView(props) {
+ 
+
     useEffect(() => {
-        let list = props.all.map((item, ind) => {
+        let list = props.all.map((item, id) => {
             return (
-                <CCarouselItem key={item.id}>
-                    <CImage
+                <Carousel autoplay key={item.id}>
+                    <Image
                         className="d-block w-100"
                         src={item.image}
                         alt="slide 1"
                     />
-                    <CCarouselCaption
+                    <CarouselCaption
                         style={{ backdropFilter: "blur(10px)" }}
                         className=" d-md-block"
                     >
@@ -32,8 +41,8 @@ export default function CarouselView(props) {
                         >
                             {item.description}
                         </p>
-                    </CCarouselCaption>
-                </CCarouselItem>
+                    </CarouselCaption>
+                </Carousel>
             );
         });
 
