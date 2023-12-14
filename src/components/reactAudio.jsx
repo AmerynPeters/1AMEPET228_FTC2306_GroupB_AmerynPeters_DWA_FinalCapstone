@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { useState, useEffect, createRef } from "react";
 import ReactAudioPlayer from "react-audio-player";
 

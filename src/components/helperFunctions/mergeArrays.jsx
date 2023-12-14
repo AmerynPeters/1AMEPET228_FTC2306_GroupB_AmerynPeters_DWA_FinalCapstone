@@ -1,6 +1,8 @@
 
 
-export default function mergeArrays(array1,array2) {
+
+
+function mergeArrays(array1,array2) {
 console.log('array1:',array1)
 console.log('array2:',array2)
 
@@ -22,3 +24,4 @@ let newArray = array1.map(norm => {
 return newArray
 
 }
+export default mergeArrays;

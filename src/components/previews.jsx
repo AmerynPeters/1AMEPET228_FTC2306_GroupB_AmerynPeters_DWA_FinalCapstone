@@ -1,5 +1,6 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { useEffect, useState } from "react";
-import mergeArrays from "./helperFunctions/mergeArrays";
+import mergeArrays from "./helperFunctions/mergeArrays.jsx";
 import createPrev from "./helperFunctions/createPrev";
 import createFav from "./helperFunctions/createFav";
 import sortArray from "./helperFunctions/sortArray";

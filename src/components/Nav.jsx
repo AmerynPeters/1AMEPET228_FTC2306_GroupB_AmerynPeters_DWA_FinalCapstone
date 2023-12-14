@@ -1,3 +1,4 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { CButton, CFormSelect, CNavbar } from "@coreui/react";
 import { supabase } from "../superbase/client";
 import { useNavigate } from "react-router-dom";
