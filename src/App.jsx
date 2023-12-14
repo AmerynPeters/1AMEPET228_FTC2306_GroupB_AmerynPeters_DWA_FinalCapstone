@@ -13,7 +13,7 @@ import { supabase } from './superbase/client';
 import Strip from './components/helperFunctions/strip';
 import createFav from './components/helperFunctions/createFav'
 import stripArray from './components/helperFunctions/stripArray';
-import ReactAudio from './components/reactAudio';
+import ReactAudio from './components/audio';
 import FuseSearch from './components/fuse/fuseSearch';
 
 

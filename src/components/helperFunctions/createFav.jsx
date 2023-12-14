@@ -11,9 +11,7 @@ async function delData(id) {
         console.log(error.message);
     }
 
-//     if (data) {
-//         console.log(data);
-//     }
+
 }
 
 async function insertData(list) {
