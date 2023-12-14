@@ -1,9 +1,8 @@
-import React from 'react'
 import './App.css'
 import { useState, useEffect } from 'react'
 import App from './App'
-import Login from './auth/login'
-import Signup from './auth/signup'
+import Login from './pages/login'
+import Signup from './pages/signup'
 import { Routes, NavLink, Route } from 'react-router-dom'
 
 function Homepage() {
