@@ -5,7 +5,7 @@ import createPrev from "./helperFunctions/createPrev";
 import createFav from "./helperFunctions/createFav";
 import sortArray from "./helperFunctions/sortArray";
 import searchInArray from "./helperFunctions/searchInArray";
-import CarouselView from "./carouselView";
+import CarouselView from "./CarouselChanger.jsx";
 import { CContainer, CRow } from "@coreui/react";
 import { mergeStrips } from "./helperFunctions/mergeStrips";
 import stripArray from "./helperFunctions/stripArray";

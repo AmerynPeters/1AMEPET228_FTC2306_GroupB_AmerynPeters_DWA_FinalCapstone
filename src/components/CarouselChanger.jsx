@@ -11,7 +11,7 @@ const contentStyle = {
   background: '#364d79',
 };
 
-export default function CarouselView(props) {
+export default function CarouselChanger(props) {
     const [items, setitems] = useState([]);
 
 
